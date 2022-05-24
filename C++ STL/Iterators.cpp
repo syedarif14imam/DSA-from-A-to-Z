@@ -36,6 +36,44 @@ int main() {
 		cout << (it->first) << " " << (it->second) << endl; //2nd way to print value of pair using (it->first) method
 	}
 	}
+
+	//range based loops -- can be used as an alternative way to use loops (can also be used with other conainers)
+	for (int &value : v) { //using reference so if any changes made will reflect.
+		value++;
+		//cout << value << " ";
+	}
+
+	for (int value : v) {
+
+		cout << value << " ";
+	}
+	cout << endl;
+
+	//using range based loops for vector of pairs.
+
+	vector<pair<int, int>> v_p = {{1, 2}, {2, 3}};
+	for (pair<int, int> &value : v_p) {
+		cout << value.first << " " << value.second << endl;
+	}
+
+	// AUTO KEYWORD -- dynamically determines data type of variable
+
+	auto a = 1.05; // automatically determines data type no need to specify
+	cout << a << endl;
+
+
+	// no need to declare (vector<int> ::iterator it)
+	for (auto it = v.begin(); it != v.end(); it++) {
+		cout << (*it) << endl;
+	}
+
+	// usage of both auto and range based loops makes code tidy and short
+	vector<pair<int, int>> v_p1 = {{1, 2}, {2, 3}};
+	for (auto &value : v_p1) {
+		cout << value.first << " " << value.second << endl;
+	}
+
+
 	
 	return 0;
 }
