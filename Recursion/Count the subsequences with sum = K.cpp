@@ -2,6 +2,10 @@
 using namespace std;
 
 int printS(int ind , int s, int sum, int arr[] , int n) {
+	//condition not satisfied
+	//strictly done if array contains positives only
+	if(s > sum) return 0;
+	
 	if (ind == n) {
 		//condtion satisfied
 		if (s == sum) return 1;
@@ -36,6 +40,7 @@ int main() {
 	return 0;
 }
 
+TC -> 2^n.
 
 
 
