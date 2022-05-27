@@ -3,11 +3,13 @@ using namespace std;
 
 bool printS(int ind, vector<int> &ds , int s, int sum, int arr[] , int n) {
 	if (ind == n) {
+		//condition satisfied
 		if (s == sum) {
 			for (auto it : ds) cout << it << " ";
 			cout << endl;
 			return true;
 		}
+		//condition not satisfied
 		else return false;
 	}
 	//take or pick particular index into  the subsequence
