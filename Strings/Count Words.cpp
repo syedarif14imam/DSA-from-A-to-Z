@@ -1,4 +1,5 @@
 // INTUTION
+//JITNI SPACES UTNE WORDS ie WORDS = SPACES +1
 /*First we will take a “count” variable and initialize it with 1 because any given Input would contain at least 1 string.
 Now, we will iterate through the String (here, “input”) using a for loop.
 For every element we will check if that element is equal to ‘  ’ or not.
