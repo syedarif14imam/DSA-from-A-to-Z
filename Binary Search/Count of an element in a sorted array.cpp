@@ -57,12 +57,6 @@ int last(int arr[], int n, int x) {
 }
 
 int main() {
-
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
-
 	// your code goes here
 	int n ;
 	cin >> n;
