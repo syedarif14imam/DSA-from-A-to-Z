@@ -15,6 +15,8 @@ int main() {
     for (int i = 0; i < m; i++) {
         cin >> array2[i];
     }
+    
+    //addition of elements
     for (int i = 0; i < n; i++) {
         result += array1[i];
     }
