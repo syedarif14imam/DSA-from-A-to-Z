@@ -33,7 +33,7 @@ int main() {
 	int arr[] = {2, 6, 4, 1, 5, 3};
 	int n = sizeof(arr) / sizeof(arr[0]);
 	SelectionSort(arr, n);
-	for (int i = 0; i < 6; i++) {
+	for (int i = 0; i < n; i++) {
 		cout << arr[i] << " ";
 	}
 }
