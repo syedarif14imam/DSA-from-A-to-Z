@@ -14,8 +14,6 @@ int main() {
 			{
 				cout<<k;
 				k++;
-	
-				
 			}
 			else
 			{
