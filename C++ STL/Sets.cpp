@@ -11,9 +11,9 @@ void print (set<string> &s) {
 		cout << value << endl;
 	}
 
-	/*for (auto it = s.begin(); it != s.end(); it++) {
+	for (auto it = s.begin(); it != s.end(); it++) {
 		cout << (*it) << endl;
-	}*/
+	}
 }
 
 int main() {
@@ -26,13 +26,13 @@ int main() {
 	s.insert("bcd");
 
 	auto it = s.find("abc"); // log(n)
-	/*if (it != s.end()) { // to find set element
+	if (it != s.end()) { // to find set element
 		cout << (*it);
-	}*/
+	}
 
-	/*if (it != s.end()) { //1st way taking iterator as input to erase set element
+	if (it != s.end()) { //1st way taking iterator as input to erase set element
 		s.erase(it);
-	}*/
+	}
 
 	s.erase("bcd");//2nd way taking string as input to erase set element
   
@@ -45,9 +45,9 @@ int main() {
 	s.insert("bcd");
 
 	auto it = s.find("abc"); // O(1)
-	/*if (it != s.end()) { // to find set element
+	if (it != s.end()) { // to find set element
 		cout << (*it);
-	}*/
+	}
   
    **** MULTI SETS ****
    
