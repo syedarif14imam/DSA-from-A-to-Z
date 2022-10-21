@@ -1,6 +1,8 @@
 // TC -> O(N^2)
 // SC -> O(1)
 
+// Tutorial -> https://www.youtube.com/watch?v=wWhAhp6PIuQ
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,9 +13,7 @@ void InsertionSort(int arr[], int n) {
 		int j = i - 1;
 		while (j >= 0 && arr[j] > current_val)
 		{	//swap
-			int temp = arr[j];
-			arr[j] = arr[j + 1];
-			arr[j + 1] = temp;
+			arr[j+1]=arr[j];
 			j--;
 		}
 		arr[j + 1] = current_val;
