@@ -20,22 +20,22 @@ void merge(int arr[], int l, int mid , int r) {
 			temp[f] = arr[i];
 			f++, i++;
 		} 
-    else {
+         else {
 			temp[f] = arr[j];
 			f++, j++;
 		}
 	}
   
-  // if elements on the left half are still left //
+	// the left array has bee fully exhausted
 
-	if (i > mid) { //
+	if (i > mid) { 
 		while (j <= r) {
 			temp[f] = arr[j];
 			f++, j++;
 		}
 	}
 	else {
-    //  if elements on the right half are still left //
+	// the right array has been fully exhausted
 		while (i <= mid) {
 			temp[f] = arr[i];
 			f++; i++;
