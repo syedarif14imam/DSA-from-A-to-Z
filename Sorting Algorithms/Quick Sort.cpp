@@ -11,27 +11,27 @@
 using namespace std;
 
 // Partition Function
-int Partition(int arr[], int start, int end) {
+int Partition(int arr[], int low, int high) {
   
-	int pivot = arr[end];
-	int partitionIndex = start;//set partition index initially as zero
+	int pivot = arr[high];
+	int partitionIndex = low;//set partition index initially as zero
   
-	for (int i = start; i < end; i++) {
+	for (int i = low; i < high; i++) {
 		if (arr[i] <= pivot) {
 			swap(arr[i], arr[partitionIndex]);// swap if element is lesser than pivot
 			partitionIndex++;
 		}
 	}
-	swap(arr[partitionIndex], arr[end]);//swap pivot with element at partition index
+	swap(arr[partitionIndex], arr[high]);//swap pivot with element at partition index
 	return partitionIndex;
 }
 
 //QuickSort Function
-void QuickSort(int arr[], int start, int end) { 
-	if (start < end) {
-		int partitionIndex = Partition(arr, start, end);//calling partition
-		QuickSort(arr, start, partitionIndex - 1);
-		QuickSort(arr, partitionIndex + 1, end);
+void QuickSort(int arr[], int low, int high) { 
+	if (low < high) {
+		int partitionIndex = Partition(arr, low, high);//calling partition
+		QuickSort(arr, low, partitionIndex - 1);
+		QuickSort(arr, partitionIndex + 1, high);
 	}
 }
 
