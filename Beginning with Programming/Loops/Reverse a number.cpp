@@ -54,6 +54,28 @@ int main()
         p/=10;
     }
 
+   // 3rd and easiest way 
+   
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    int ans =0;
+    
+    //extract last digit and then multiply it by 10 and add remainder for 2345
+   
+        // 5 -> 5 *10+4 -> 54*10+3 -> 543*10+2
+    
+    while(n){
+         int r = n  % 10;
+        ans = ans *10 + r;
+        n/=10;
+    }
+    cout << ans;
+    return 0;
+}
+
     cout << ans ;
     return 0;
 }
